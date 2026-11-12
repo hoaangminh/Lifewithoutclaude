@@ -34,7 +34,7 @@ bool isPalindrome(int number)
     {
         int remainder = number % 10;
         reversedNumber = reversedNumber * 10 + remainder;
-        number /= 10;
+        number /= 10; //this function takes the last digit of the original number and forms its reversed number
     }
-    return originalNumber == reversedNumber;
+    return originalNumber == reversedNumber; 
 }
